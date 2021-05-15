@@ -1,13 +1,13 @@
 {
   "name": "node-api-postgres",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rest API and basic CRUD app using Node.JS, ExpressJS",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Showrin",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
