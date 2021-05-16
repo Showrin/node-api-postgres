@@ -21,11 +21,5 @@ app.get(routes.base, (request, response) => {
     port,
   });
 });
-
-app.get(routes.users.all, (request, response) => {
-  queries.getAllUsers(request, response);
-});
-
-app.get(routes.users.one, (request, response) => {
-  queries.getUserById(request, response);
-});
+app.get(routes.users.all, queries.getAllUsers);
+app.get(routes.users.one, queries.getUserById);
