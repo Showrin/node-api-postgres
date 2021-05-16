@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv');
+const queries = require('./queries');
 
 dotenv.config();
 
@@ -18,4 +19,8 @@ app.get('/', (request, response) => {
     description: 'Rest API and basic CRUD app using Node.JS, ExpressJS',
     port,
   });
+});
+
+app.get('/users', (request, response) => {
+  queries.getAllUsers(request, response);
 });
