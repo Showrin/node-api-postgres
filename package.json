@@ -14,5 +14,8 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
