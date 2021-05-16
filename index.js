@@ -25,3 +25,7 @@ app.get(routes.base, (request, response) => {
 app.get(routes.users.all, (request, response) => {
   queries.getAllUsers(request, response);
 });
+
+app.get(routes.users.one, (request, response) => {
+  queries.getUserById(request, response);
+});
