@@ -13,7 +13,7 @@ app.listen(port, () => {
   console.log('Server is running on port', port);
 });
 
-app.get('/', (request, response) => {
+app.get(routes.base, (request, response) => {
   response.status(200).json({
     name: 'node-api-postgres',
     version: '1.0.0',
