@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv');
 const queries = require('./queries');
@@ -8,6 +7,13 @@ const routes = require('./routes');
 dotenv.config();
 
 const port = process.env.PORT || 3000;
+
+app.use(express.json());
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
 
 app.listen(port, () => {
   console.log('Server is running on port', port);
