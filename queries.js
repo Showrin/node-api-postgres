@@ -23,4 +23,20 @@ const getUserById = (request, response) => {
   });
 };
 
-module.exports = { getAllUsers, getUserById };
+const createUser = (request, response) => {
+  const { name, email } = request.body;
+
+  pool.query(
+    'INSERT INTO users (name, email) VALUES ($1, $2) RETURNING id',
+    [name, email],
+    (error, result) => {
+      if (error) {
+        response.status(500);
+      }
+
+      response.status(201).send(`User's created with id: ${result.rows[0].id}`);
+    }
+  );
+};
+
+module.exports = { getAllUsers, getUserById, createUser };
