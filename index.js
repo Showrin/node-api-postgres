@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const dotenv = require('dotenv');
 const queries = require('./queries');
+const routes = require('./routes');
 
 dotenv.config();
 
@@ -21,6 +22,6 @@ app.get('/', (request, response) => {
   });
 });
 
-app.get('/users', (request, response) => {
+app.get(routes.users.all, (request, response) => {
   queries.getAllUsers(request, response);
 });
