@@ -39,4 +39,21 @@ const createUser = (request, response) => {
   );
 };
 
-module.exports = { getAllUsers, getUserById, createUser };
+const updateUserById = (request, response) => {
+  const id = parseInt(request.params.id);
+  const { name, email } = request.body;
+
+  pool.query(
+    'UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING id',
+    [name, email, id],
+    (error, result) => {
+      if (error) {
+        response.status(500);
+      }
+
+      response.status(201).send(result.rows);
+    }
+  );
+};
+
+module.exports = { getAllUsers, getUserById, createUser, updateUserById };
