@@ -44,16 +44,34 @@ const updateUserById = (request, response) => {
   const { name, email } = request.body;
 
   pool.query(
-    'UPDATE users SET name = $1, email = $2 WHERE id = $3 RETURNING id',
+    'UPDATE users SET name = $1, email = $2 WHERE id = $3',
     [name, email, id],
     (error, result) => {
       if (error) {
         response.status(500);
       }
 
-      response.status(201).send(result.rows);
+      response.status(200).send(`Updated user with id ${id}`);
     }
   );
 };
 
-module.exports = { getAllUsers, getUserById, createUser, updateUserById };
+const deleteUserById = (request, response) => {
+  const id = parseInt(request.params.id);
+
+  pool.query('DELETE FROM users WHERE id = $1', [id], (error, result) => {
+    if (error) {
+      response.status(500);
+    }
+
+    response.status(200).send(`Deleted user with id ${id}`);
+  });
+};
+
+module.exports = {
+  getAllUsers,
+  getUserById,
+  createUser,
+  updateUserById,
+  deleteUserById,
+};

@@ -31,3 +31,4 @@ app.get(routes.users.all, queries.getAllUsers);
 app.get(routes.users.one, queries.getUserById);
 app.post(routes.users.all, queries.createUser);
 app.put(routes.users.one, queries.updateUserById);
+app.delete(routes.users.one, queries.deleteUserById);
