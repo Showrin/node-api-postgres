@@ -1,4 +1,7 @@
 const pool = require('./pool');
+const loadScheema = require('./scheema');
+
+loadScheema(pool);
 
 const getAllUsers = (request, response) => {
   pool.query('SELECT * FROM users ORDER BY id ASC', (error, result) => {
