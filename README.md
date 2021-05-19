@@ -23,14 +23,6 @@ This project is built using the following tech stack:
 
 Fork this repo and then clone that repo into your local machine.
 
-### Install Packages
-
-``` 
-npm install
-
-npm start
-```
-
 ### Setup Postgresql Database
 
 Please, goto this [link](https://www.postgresql.org/download/), download and install **Postgresql** into your OS. Then open your terminal and run these commands.
@@ -52,3 +44,11 @@ CREATE DATABASE crudapi;
 - Paste it in **`.env`** file
 - By default all the variables are assigned a value. Keep it as it is.
 - **But if you create Database and users with different name, password (as not same as [these instructions](###Setup-Postgresql-Database)), you can change these variables as expected**
+
+### Run Dev Server
+
+``` 
+npm install
+
+npm start
+```
