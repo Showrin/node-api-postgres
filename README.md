@@ -26,7 +26,6 @@ Fork this repo and then clone that repo into your local machine.
 ### Install Packages
 
 ``` 
-
 npm install
 
 npm start
@@ -37,7 +36,6 @@ npm start
 Please, goto this [link](https://www.postgresql.org/download/), download and install **Postgresql** into your OS. Then open your terminal and run these commands.
 
 ``` 
-
 CREATE ROLE me WITH LOGIN PASSWORD ‘password’;
 
 ALTER ROLE me CREATEDB;
