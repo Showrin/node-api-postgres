@@ -44,3 +44,11 @@ ALTER ROLE me CREATEDB;
 
 CREATE DATABASE crudapi;
 ```
+
+### Setup Environment Variables
+
+- Create a file named **`.env`**
+- Copy codes from **`.env.example`** file 
+- Paste it in **`.env`** file
+- By default all the variables are assigned a value. Keep it as it is.
+- **But if you create Database and users with different name, password (as not same as [these instructions](###Setup-Postgresql-Database)), you can change these variables as expected**
