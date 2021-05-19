@@ -28,9 +28,21 @@ Fork this repo and then clone that repo into your local machine.
 ``` 
 
 npm install
+
 npm start
 ```
 
 ### Setup Postgresql Database
 
-Please, goto this [link](https://www.postgresql.org/download/), download and install **Postgresql** into your OS.
+Please, goto this [link](https://www.postgresql.org/download/), download and install **Postgresql** into your OS. Then open your terminal and run these commands.
+
+``` 
+
+CREATE ROLE me WITH LOGIN PASSWORD ‘password’;
+
+ALTER ROLE me CREATEDB;
+
+-d postgres -U me
+
+CREATE DATABASE crudapi;
+```
