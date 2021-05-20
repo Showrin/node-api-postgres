@@ -168,6 +168,10 @@ This file keeps an example of `.env` . We have to create `.env` files with the h
 
 This file is used to tell **`Heroku`** what scripts should be run to start the server.
 
+### app.json
+
+This file is used to tell **`Heroku`** what scripts should be run to start the server.
+
 <br>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
