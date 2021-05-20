@@ -132,3 +132,7 @@ This file keeps an example of `.env`. We have to create `.env` files with the he
 - Shows which environment variables are needed
 
 - What values these variables are expecting
+
+### Procfile
+
+This file is used to tell **`Heroku`** what scripts should be run to start the server.
