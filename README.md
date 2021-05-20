@@ -171,4 +171,44 @@ This file is also used for **`Heroku`**. It's just giving a short detail of the 
 
 <br>
 
+## How to deploy to `Heroku`
+
+### Setup Postgresql Database
+
+#### Create Database
+
+- GoTo **`Resource Tab`** in the dashboard
+
+- Here, in the **Add on** search field, type **`Heroku Postgres`**
+
+- Then from the suggestion click on the **`Heroku Postgres`**
+
+- From the popup, select **`Hobby Dev - Free`** as plan and click **Provision**
+
+The database will be created.
+
+#### Setup DB credentials as Environment variable
+
+- At first, Goto the settings tab
+
+- Then click on **`Reveal Config Vars`** from the below
+
+- **Search for `DATABASE_URL` this variable. If it's here, you don't need to follow the following steps. Otherwise follow.**
+
+- Goto the resource tab again and select **`Heroku Postgres`**
+
+- Then, select the `Settings` tab
+
+- Select **`View Credentials`** button
+
+- Copy the value of **`URI`** field
+
+- Go back to the dashboard of the app and goto the settings tab
+
+- Then click on **`Reveal Config Vars`** from the below
+
+- Type **`DATABASE_URL`** in the **KEY** input field
+
+- Paste the value of **`URI`** you copied in the **VALUE** input field
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
