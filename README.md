@@ -3,6 +3,7 @@
 It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main theme of this project is helping beginners to learn **how to build REST API** with **CRUD functionalities**, how to **deploy and test** the app.
 
 <br>
+<br>
 
 ## Technology
 
@@ -13,6 +14,7 @@ This project is built using the following tech stack:
 * **Postgresql**
 
 <br>
+<br>
 
 ## Packages Used
 
@@ -21,6 +23,7 @@ This project is built using the following tech stack:
 * express **^4.17.1**
 * pg **^8.6.0**
 
+<br>
 <br>
 
 ## Setup
@@ -65,6 +68,7 @@ npm install
 npm start
 ```
 
+<br>
 <br>
 
 ## File Structure and Uses of Each Files
@@ -165,10 +169,13 @@ This file keeps an example of `.env`. We have to create `.env` files with the he
 
 This file is used to tell **`Heroku`** what scripts should be run to start the server.
 
+<br>
+
 ### app.json
 
 This file is also used for **`Heroku`**. It's just giving a short detail of the app to Heroku.
 
+<br>
 <br>
 
 ## How to deploy to `Heroku`
