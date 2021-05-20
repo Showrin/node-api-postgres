@@ -90,3 +90,13 @@ This file is the **entry point of the app**. That means if any user hit the doma
 ### routes.js
 
 This file keeps all the routes available in this app and `index.js` reads routes/path/api-endpoints from this file.
+
+### pool.js
+
+This file creates the connection between the database and the app. We have to use this pool to run any kind of query into the database. It does the following tasks:
+
+- Read the environment variables that are necessary
+
+- Create connection pool using these variables
+
+- Enable SSL connection for production
