@@ -173,6 +173,22 @@ This file is also used for **`Heroku`**. It's just giving a short detail of the 
 
 ## How to deploy to `Heroku`
 
+### Deploy the App
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+- ☝️ ☝️ ☝️ Click on the button above
+
+- Then type a name in the app name field
+
+- Then connect to github
+
+- And deploy
+
+- When the deployment will end, click on the **`View App`** button
+
+<br>
+
 ### Setup Postgresql Database
 
 #### Create Database
@@ -210,5 +226,3 @@ The database will be created.
 - Type **`DATABASE_URL`** in the **KEY** input field
 
 - Paste the value of **`URI`** you copied in the **VALUE** input field
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
