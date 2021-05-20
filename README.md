@@ -31,6 +31,7 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
     - [Setup Postgresql Database](#setup-postgresql-database-1)
       - [Create Database](#create-database)
       - [Setup DB credentials as Environment variable](#setup-db-credentials-as-environment-variable)
+  - [How to Contribute](#how-to-contribute)
 
 
 <br>
@@ -267,3 +268,7 @@ The database will be created.
 
 <br>
 <br>
+
+## How to Contribute
+
+If you find any typo or think of any better or simple project structure, then create an **issue** and describe your thought here. I will discuss that with you. And then you can give pull request with your implementations.
