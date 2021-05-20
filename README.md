@@ -86,3 +86,7 @@ This file is the **entry point of the app**. That means if any user hit the doma
 - **Connects the http requests with database** and prepare necessary responses
 
 - Finally, send the responses to the users
+
+### routes.js
+
+This file keeps all the routes available in this app and `index.js` reads routes/path/api-endpoints from this file.
