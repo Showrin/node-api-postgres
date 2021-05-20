@@ -124,3 +124,11 @@ This file keeps all the queries based on api endpoints. It does following tasks:
 - Returns these responses
 
 `index.js` uses these functions to process the users' requests
+
+### .env.exmaple
+
+This file keeps an example of `.env`. We have to create `.env` files with the help of this file.
+
+- Shows which environment variables are needed
+
+- What values these variables are expecting
