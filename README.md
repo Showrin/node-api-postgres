@@ -110,3 +110,17 @@ This file keeps all the queries that are needed to be run before starting the se
 - Creating basic users
 
 These queries are needed to prevent errors while executing requests through api-endpoints
+
+### queries.js
+
+This file keeps all the queries based on api endpoints. It does following tasks:
+
+- It exposes some processing functions
+
+- These functions receive the request sent by the users
+
+- Based on the different endpoints, different function runs different queries to the database and builds the response object
+
+- Returns these responses
+
+`index.js` uses these functions to process the users' requests
