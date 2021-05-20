@@ -2,6 +2,6 @@
   "name": "node-api-postgres",
   "description": "Rest API and basic CRUD app using Node.JS, ExpressJS",
   "repository": "https://github.com/Showrin/node-api-postgres",
-  "logo": "http://basic-crud-nodejs-postgres.herokuapp.com/node.png",
+  "logo": "https://i.imgur.com/uFs44ig.png",
   "keywords": ["node", "express", "postgrsql", "crud", "api"]
 }
