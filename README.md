@@ -72,3 +72,17 @@ Keep all the information related to the package. For example:
 - Dependencies
 
 - Dev Environment Dependencies
+
+### index.js
+
+This file is the **entry point of the app**. That means if any user hit the domain address of your app, the request will be sent to this file and then further process will happen. In this project, this file is executing the following tasks:
+
+- Intialize the app
+
+- Start the server
+
+- Listen all the http requests to different api endpoint (domain path, ex: `/users` or `/users/:id`)
+
+- **Connects the http requests with database** and prepare necessary responses
+
+- Finally, send the responses to the users
