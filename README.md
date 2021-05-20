@@ -224,6 +224,8 @@ The database will be created.
 
 - Paste the value of **`URI`** you copied in the **VALUE** input field
 
+For more details, read this 👉 [**article**](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1).
+
 <br>
 
 ## How to Contribute
