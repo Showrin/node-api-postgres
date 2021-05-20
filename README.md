@@ -100,3 +100,13 @@ This file creates the connection between the database and the app. We have to us
 - Create connection pool using these variables
 
 - Enable SSL connection for production
+
+### scheema.js
+
+This file keeps all the queries that are needed to be run before starting the server. These queries are used for:
+
+- Creating necessary tables
+
+- Creating basic users
+
+These queries are needed to prevent errors while executing requests through api-endpoints
