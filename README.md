@@ -52,3 +52,23 @@ npm install
 
 npm start
 ```
+
+## File Structure and Uses of Each Files
+
+### Package.json
+
+Keep all the information related to the package. For example:
+  
+- Package name
+
+- Package Description
+
+- Package Version
+
+- Entry Point (file, ex: index.js) of the package
+
+- Scripts
+
+- Dependencies
+
+- Dev Environment Dependencies
