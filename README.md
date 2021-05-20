@@ -5,6 +5,37 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
 <br>
 <br>
 
+## Table of Content
+
+- [node-api-postgres](#node-api-postgres)
+  - [Table of Content](#table-of-content)
+  - [Technology](#technology)
+  - [Packages Used](#packages-used)
+  - [Setup](#setup)
+    - [Forking](#forking)
+    - [Setup Postgresql Database](#setup-postgresql-database)
+    - [Setup Environment Variables](#setup-environment-variables)
+    - [Run Dev Server](#run-dev-server)
+  - [File Structure and Uses of Each Files](#file-structure-and-uses-of-each-files)
+    - [package.json](#packagejson)
+    - [index.js](#indexjs)
+    - [routes.js](#routesjs)
+    - [pool.js](#pooljs)
+    - [scheema.js](#scheemajs)
+    - [queries.js](#queriesjs)
+    - [.env.exmaple](#envexmaple)
+    - [Procfile](#procfile)
+    - [app.json](#appjson)
+  - [How to deploy to `Heroku`](#how-to-deploy-to-heroku)
+    - [Deploy the App](#deploy-the-app)
+    - [Setup Postgresql Database](#setup-postgresql-database-1)
+      - [Create Database](#create-database)
+      - [Setup DB credentials as Environment variable](#setup-db-credentials-as-environment-variable)
+
+
+<br>
+<br>
+
 ## Technology
 
 This project is built using the following tech stack:
@@ -73,7 +104,7 @@ npm start
 
 ## File Structure and Uses of Each Files
 
-### Package.json
+### package.json
 
 Keep all the information related to the package. For example:
   
@@ -233,3 +264,6 @@ The database will be created.
 - Type **`DATABASE_URL`** in the **KEY** input field
 
 - Paste the value of **`URI`** you copied in the **VALUE** input field
+
+<br>
+<br>
