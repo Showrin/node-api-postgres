@@ -19,6 +19,7 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
     - [Setup curl](#setup-curl)
     - [Commands to test the app](#commands-to-test-the-app)
       - [Testing POST request (Create functionality)](#testing-post-request-create-functionality)
+      - [Testing GET request (Read functionality)](#testing-get-request-read-functionality)
   - [File Structure and Uses of Each Files](#file-structure-and-uses-of-each-files)
     - [package.json](#packagejson)
     - [index.js](#indexjs)
@@ -139,6 +140,33 @@ User's created with id: 11     // This number can be different for you
 > **Note 2:** While testing the app in Heroku (after deployment), replace `http://localhost:5000` this with the domain given by Heroku for your app like `https://<Domain given by Heroku>/users`.
 
 <br>
+
+#### Testing GET request (Read functionality)
+
+```
+curl -X GET http://localhost:5000/users
+```
+
+This will read all the users from the database and show them like:
+
+```
+[{"id":1,"name":"admin","email":"admin@example.com"},{"id":11,"name":"me","email":"me@example.com"}]
+```
+
+If no user exists, it will show a empty array `[]`.
+
+You can also get the info of one specific user. Run this command.
+
+```
+curl -X GET http://localhost:5000/users/1
+```
+
+If the user with id 1 is available, it will show you the info of that user like:
+
+```
+[{"id":1,"name":"admin","email":"admin@example.com"}]
+```
+
 
 ## File Structure and Uses of Each Files
 
