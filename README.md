@@ -6,6 +6,9 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
 
 ## Table of Content
 
+<details>
+<summary><b>Click to see the Table of Content</b></summary>
+
 - [node-api-postgres](#node-api-postgres)
   - [Table of Content](#table-of-content)
   - [Technology](#technology)
@@ -38,7 +41,7 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
       - [Create Database](#create-database)
       - [Setup DB credentials as Environment variable](#setup-db-credentials-as-environment-variable)
   - [How to Contribute](#how-to-contribute)
-
+</details>
 
 <br>
 
