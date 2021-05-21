@@ -137,10 +137,6 @@ If this command has been successfully executed, then it will return the id of th
 User's created with id: 11     // This number can be different for you
 ```
 
-> **Note 1:** In this command, if you are using a different port number instead of 5000, replace **5000** with your port number in `http://localhost:5000/users`
-
-> **Note 2:** While testing the app in Heroku (after deployment), replace `http://localhost:5000` this with the domain given by Heroku for your app like `https://<Domain given by Heroku>/users`.
-
 <br>
 
 #### Testing GET request (Read functionality)
@@ -203,6 +199,8 @@ Deleted user with id 11
 ```
 
 You can check the result by running GET request also.
+
+> **Note 1: In this command, if you are using a different port number instead of 5000, replace `5000` with your port number in `http://localhost:5000/users`**
 
 ## File Structure and Uses of Each Files
 
