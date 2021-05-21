@@ -15,6 +15,8 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
     - [Setup Postgresql Database](#setup-postgresql-database)
     - [Setup Environment Variables](#setup-environment-variables)
     - [Run Dev Server](#run-dev-server)
+  - [How to test the app](#how-to-test-the-app)
+    - [Setup curl](#setup-curl)
   - [File Structure and Uses of Each Files](#file-structure-and-uses-of-each-files)
     - [package.json](#packagejson)
     - [index.js](#indexjs)
@@ -86,6 +88,26 @@ npm install
 
 npm start
 ```
+
+<br>
+
+## How to test the app
+
+For testing the CRUD functionalities, you have to install **`curl`** in your OS.
+
+### Setup curl
+
+To check if your OS has curl pre-installed, open the terminal/cmd and run the following command:
+
+```
+curl --version
+```
+
+If curl is pre-installed, it will show the version of the curl here. Otherwise, it'll say, **`'curl' is not recognized as an internal or external command`**.
+
+If curl is not installed, then please follow the top answers given to [**this question in stackoverflow**](https://stackoverflow.com/questions/9507353/how-do-i-install-and-use-curl-on-windows).
+
+And you can also read this [**article**](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux).
 
 <br>
 
