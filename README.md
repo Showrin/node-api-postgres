@@ -21,6 +21,7 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
       - [Testing POST request (Create functionality)](#testing-post-request-create-functionality)
       - [Testing GET request (Read functionality)](#testing-get-request-read-functionality)
       - [Testing PUT request (Update functionality)](#testing-put-request-update-functionality)
+      - [Testing DELETE request (Delete functionality)](#testing-delete-request-delete-functionality)
   - [File Structure and Uses of Each Files](#file-structure-and-uses-of-each-files)
     - [package.json](#packagejson)
     - [index.js](#indexjs)
@@ -188,6 +189,20 @@ Updated user with id 11
 ```
 
 You can check the result by running GET request and see the info whether it gets changed or not.
+
+#### Testing DELETE request (Delete functionality)
+
+```
+curl -X DELETE http://localhost:5000/users/11
+```
+
+This command will delete the user having `id: 11` from the database. And return the id of the user as response like:
+
+```
+Deleted user with id 11
+```
+
+You can check the result by running GET request also.
 
 ## File Structure and Uses of Each Files
 
