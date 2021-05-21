@@ -17,6 +17,8 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
     - [Run Dev Server](#run-dev-server)
   - [How to test the app](#how-to-test-the-app)
     - [Setup curl](#setup-curl)
+    - [Commands to test the app](#commands-to-test-the-app)
+      - [Testing POST request (Create functionality)](#testing-post-request-create-functionality)
   - [File Structure and Uses of Each Files](#file-structure-and-uses-of-each-files)
     - [package.json](#packagejson)
     - [index.js](#indexjs)
@@ -108,6 +110,33 @@ If curl is pre-installed, it will show the version of the curl here. Otherwise, 
 If curl is not installed, then please follow the top answers given to [**this question in stackoverflow**](https://stackoverflow.com/questions/9507353/how-do-i-install-and-use-curl-on-windows).
 
 And you can also read this [**article**](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux).
+
+### Commands to test the app
+
+Open the terminal. Now run the following commands:
+
+#### Testing POST request (Create functionality)
+
+```
+curl -X POST -d "name=me&email=me@example.com" http://localhost:5000/users
+```
+
+This command will create a user with these infos:
+
+```
+name: me
+email: me@example.com
+```
+
+If this command has been successfully executed, then it will return the id of the new user as the response.
+
+```
+User's created with id: 11
+```
+
+> **Note 1:** In this command, if you are using a different port number instead of 5000, replace **5000** with your port number in `http://localhost:5000/users`
+
+> **Note 2:** While testing the app in Heroku (after deployment), replace `http://localhost:5000` this with the domain given by Heroku for your app like `https://<Domain given by Heroku>/users`.
 
 <br>
 
