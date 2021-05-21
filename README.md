@@ -20,6 +20,7 @@ It's a basic **CRUD REST API** app, built on top of NodeJs. Basically, the main 
     - [Commands to test the app](#commands-to-test-the-app)
       - [Testing POST request (Create functionality)](#testing-post-request-create-functionality)
       - [Testing GET request (Read functionality)](#testing-get-request-read-functionality)
+      - [Testing PUT request (Update functionality)](#testing-put-request-update-functionality)
   - [File Structure and Uses of Each Files](#file-structure-and-uses-of-each-files)
     - [package.json](#packagejson)
     - [index.js](#indexjs)
@@ -167,6 +168,26 @@ If the user with id 1 is available, it will show you the info of that user like:
 [{"id":1,"name":"admin","email":"admin@example.com"}]
 ```
 
+#### Testing PUT request (Update functionality)
+
+```
+curl -X PUT -d "name=Iam&email=iam@example.com" http://localhost:5000/users/11
+```
+
+This command will update info of the user having `id: 11` with these information:
+
+```
+name: Iam
+email: iam@example.com
+```
+
+If this command has been successfully executed, then it will return the id of the new user as the response.
+
+```
+Updated user with id 11
+```
+
+You can check the result by running GET request and see the info whether it gets changed or not.
 
 ## File Structure and Uses of Each Files
 
