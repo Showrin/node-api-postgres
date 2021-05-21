@@ -131,7 +131,7 @@ email: me@example.com
 If this command has been successfully executed, then it will return the id of the new user as the response.
 
 ```
-User's created with id: 11
+User's created with id: 11     // This number can be different for you
 ```
 
 > **Note 1:** In this command, if you are using a different port number instead of 5000, replace **5000** with your port number in `http://localhost:5000/users`
