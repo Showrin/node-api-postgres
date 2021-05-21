@@ -200,7 +200,7 @@ Deleted user with id 11
 
 You can check the result by running GET request also.
 
-> **Note 1: In this command, if you are using a different port number instead of 5000, replace `5000` with your port number in `http://localhost:5000/users`**
+> **Note: In this command, if you are using a different port number instead of 5000, replace `5000` with your port number in `http://localhost:5000/users`**
 
 ## File Structure and Uses of Each Files
 
@@ -338,6 +338,8 @@ The database will be created.
 - Paste the value of **`URI`** you copied in the **VALUE** input field
 
 For more details, read this 👉 [**article**](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1).
+
+> **Note: While testing the app in Heroku (after deployment), follow the same instructions given [How to test the app](#how-to-test-the-app) section and replace `http://localhost:5000` this with the domain given by Heroku for your app like `https://<Domain given by Heroku>/users`.** 
 
 <br>
 
